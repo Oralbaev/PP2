@@ -15,14 +15,19 @@ class String:
 #2, 3        
 class Shape:
     def __init__(self):
-        self.area = 0
-        
-class Square:
+        pass
+
+    def area(self):
+        return 0
+
+class Square(Shape):
     def __init__(self, length):
+        super().__init__()
         self.length = length
 
     def area(self):
-        return self.length * self.length
+        return self.length ** 2
+
 
 class Rectangle:
     def __init__(self, l, w):

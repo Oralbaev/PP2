@@ -85,7 +85,6 @@ def GetRatings(name):
                 return True
             else:
                 return False
-
 #2
 def GetGoodMovies():
     res = []
