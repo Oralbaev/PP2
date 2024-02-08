@@ -70,10 +70,17 @@ class Account():
             print(f"Withdrawal of {num} successful. Current balance: {self.balance}")
 
 #6
-def IsPrime(num):
-    if num < 2:
-        return False
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
+class Prime_san:
+    def __init__(self, nums):
+        self.nums = nums
+
+    def prime_ssan(self, num):
+        if num < 2:
             return False
-    return True
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                return False
+        return True
+
+    def prime_fil(self):
+        return list(filter(lambda x: self.prime_ssan(x), self.nums))
