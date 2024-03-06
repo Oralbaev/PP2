@@ -8,7 +8,8 @@ with open('row.txt', 'r', encoding='utf-8') as file:
 
 
 def replace_with_colon(content):
-    result_string = content.replace(' ', ':').replace(',', ':').replace('.', ':')
+    pattern = r'[ ,.]'
+    result_string = re.sub(pattern, ':', content)
     return result_string
 
 
