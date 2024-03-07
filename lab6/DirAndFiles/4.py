@@ -1,4 +1,5 @@
 import os
+S = 0
 with open('ex2.txt', 'r') as f:
-    x = sum(1 for i in f)
-print(x)
+    for x in f: S += 1
+print(S)
