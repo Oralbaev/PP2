@@ -10,7 +10,6 @@ screen = pygame.display.set_mode((960, 600))
 songs = ['ride.mp3','eminem.mp3','maniac.mp3','gorillaz.mp3']
 pygame.mixer.music.load(songs[0])
 pygame.mixer.music.play()
-
 i = 0
 paused = False
 while True:

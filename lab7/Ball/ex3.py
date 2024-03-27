@@ -3,7 +3,7 @@ Draw circle - a red ball of size 50 x 50 (radius = 25) on white background.
 When user presses Up, Down, Left, Right arrow keys on keyboard, 
 the ball should move by 20 pixels in the direction of pressed key. 
 The ball should not leave the screen, i.e. user input that leads the ball to 
-leave of the screen should be ignored.
+leave of the screen should be ignored
 '''
 
 
@@ -24,16 +24,16 @@ while running:
     pygame.display.update()
     keys = pygame.key.get_pressed()
     if keys[pygame.K_RIGHT] :
-        x += 2
+        x += 20
         x = min(x, right_limit)
     if keys[pygame.K_LEFT] :
-        x -= 2
+        x -= 20
         x = max(x, left_limit)
     if keys[pygame.K_DOWN] :
-        y += 2
+        y += 20
         y = min(y,down_limit)
     if keys[pygame.K_UP] :
-        y -= 2
+        y -= 20
         y = max(y, up_limit)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:

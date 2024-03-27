@@ -6,7 +6,6 @@ screen = pygame.display.set_mode((700, 525))
 i = pygame.image.load('mm.png')
 l = pygame.image.load('left.png')
 r = pygame.image.load('right.png')
-
 new_size = (700, 525)
 bg = pygame.transform.scale(i, (700, 525))
 
